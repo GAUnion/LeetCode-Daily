@@ -23,14 +23,17 @@ PS：上述部分规则参考[严酷打卡群](<https://wisdompeak.github.io/lc-
 2. 安装git及后续相关操作（如之前已使用过git可跳过这不） [github教程一](<https://blog.csdn.net/qq_35246620/article/details/66973794>) [github教程二](<https://www.runoob.com/w3cnote/git-guide.html>)
 
 3. 负责代码到本地：由于仓库已经建立好，所以直接clone到本地即可
-      `git clone https://github.com/GAUnion/LeetCode-Daily.git` 
+      
+   `git clone https://github.com/GAUnion/LeetCode-Daily.git` 
 
 4. 每次上传前请先更新一下本地仓库 
+   
    `git pull` 
 
 5. 编写题解或者将写好的文件移入到“题解”文件夹中
 
 6. 写好后添加文件到缓存区准备提交
+   
    `git add .`
 
 7. 使用如下命令以实际提交改动 双引号中的内容可以修改
