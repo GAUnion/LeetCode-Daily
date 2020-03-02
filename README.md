@@ -47,11 +47,7 @@ PS：上述部分规则参考[严酷打卡群](<https://wisdompeak.github.io/lc-
 
 全称Go Abroad Union
 
-
-<center>
-   <img src="https://github.com/GAUnion/LeetCode-Daily/images/gau.png" height="200" />
-</center>
-
+![image-20200302211704348](https://github.com/GAUnion/LeetCode-Daily/blob/master/images/gau-1.png)
 
 交大校友 自发创立
 
@@ -66,3 +62,5 @@ PS：上述部分规则参考[严酷打卡群](<https://wisdompeak.github.io/lc-
 慷慨分享 一同出国
 
 我为人人 人人为我
+
+![image-20200302211704348](https://github.com/GAUnion/LeetCode-Daily/blob/master/images/gau.png)
