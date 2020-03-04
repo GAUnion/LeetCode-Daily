@@ -22,22 +22,22 @@ Divide the array of strings into two parts, and then, divide each sub-array into
 
 ```python
 class Solution:            
-    def commonPrefixUtil(str1, str2):  
+    def commonPrefixUtil(self, str1, str2):  
         for i in range(len(str1)):
             if i>=len(str2) or str2[i]!=str1[i]:
                 return str1[:i]  
 
-    def LCP_(arr, low, high):  
+    def LCP_(self, arr, low, high):  
         if low == high: 
             return arr[low]  
         if high > low:  
             mid = low + (high - low) // 2
-            str1 = LCP(arr, low, mid)  
-            str2 = LCP(arr, mid + 1, high)  
-            return commonPrefixUtil(str1, str2)
+            str1 = self.LCP_(arr, low, mid)  
+            str2 = self.LCP_(arr, mid + 1, high)  
+            return self.commonPrefixUtil(str1, str2)
      
     def longestCommonPrefix(self, strs: List[str]) -> str:
-    	return LCP(arr, 0, len(strs) - 1) 
+    	return self.LCP_(strs, 0, len(strs) - 1) 
 
 
 ```
