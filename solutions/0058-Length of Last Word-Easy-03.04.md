@@ -34,4 +34,6 @@ class Solution:
             return 0
         return len(s[-1])
 ```
-In Java, the trim() method has the similar function as the split method.
+Java has the similar function as the split method.
+
+However, in C/C++, there is no such kind of method.
