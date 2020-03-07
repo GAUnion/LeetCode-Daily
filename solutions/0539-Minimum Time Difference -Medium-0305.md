@@ -1,4 +1,4 @@
-# Add Strings
+# Minimum Time Difference
 
 **Problem**: Given a 24-hour(hour:minute) time list, find the minimum time difference between any two times in the time list and represent it with minutes. 
 
