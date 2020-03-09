@@ -72,7 +72,7 @@ test(29, " 005047e+6", true);  //Damn = =|||
 
 If you understand examples above, you can directly write a regular expression to match this string. More information about regular expression [on this site](https://www.runoob.com/python/python-reg-expressions.html).
 
-A regular expression solution in Python:
+A regular expression solution in Java:
 
 ```java
 class Solution {
