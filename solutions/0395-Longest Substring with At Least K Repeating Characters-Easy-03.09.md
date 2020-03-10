@@ -1,12 +1,12 @@
 # 395. Longest Substring with At Least K Repeating Characters
 
-## Problem Desciption
+## Problem Description
 
 Find the length of the longest substring ***T\*** of a given string (consists of lowercase letters only) such that every character in ***T\*** appears no less than *k* times.
 
 
 
-## Sulotions
+## Solutions
 
 ### 1. Recursion
 
@@ -51,7 +51,7 @@ public:
 };
 ```
 
-### 2. Iterative
+### 2. Iteration
 
 This solution is to count the number of characters which appears no less than *k* times.(count) Then iteratively find the max length of a sliding window which contains i unique characters (1 <=i <= count) satisfing the condition above.
 
