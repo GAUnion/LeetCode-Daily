@@ -10,8 +10,6 @@ Find the length of the longest substring ***T\*** of a given string (consists of
 
 ### 1. Recursion
 
-**looks for characters without `k` count and then recursively searches segments between these characters for longest length**
-
 The idea of this solution is to look for characters which appear less than *k* times and then recursively search the substrings between these characters for longest length. So in this way, we can use an array to record the frequency of each cahracter. Then divide the string. Remember to check the corner case. 
 
 ```
