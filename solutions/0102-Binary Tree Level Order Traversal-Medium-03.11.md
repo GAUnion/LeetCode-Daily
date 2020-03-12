@@ -1,7 +1,5 @@
 # Binary Tree Level Order Traversal
 
-------
-
 #### Problem
 
 Given a binary tree, return the *level order* traversal of its nodes' values. (ie, from left to right, level by level).
@@ -37,6 +35,8 @@ class Solution {
 ```
 
 The recursive method is clean and neat. Howerver it usually take more time and space than the iterative method. (In this problem, two methods' efficiency are very close)
+
+------
 
 #### Solution 2: Breadth-First-Search + Iterative:
 
