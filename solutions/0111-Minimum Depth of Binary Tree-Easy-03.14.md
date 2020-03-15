@@ -24,6 +24,8 @@ If the tree is null, the minimum depth is 0.
 If the tree only contain one node, the minimum depth is 1.
 If the tree contains two nodes, it is impossible that they are both leaf nodes. The the minimum depth is 2.
 
+**Solution 1**  recursion
+
 Using recursion to solve this problem. Find the minimum depth of the left subtree and the right subtree. The result is the minimum of them plus one. The special case should be noted that if either left or right subtree is null, the general solution is invalid.
 
 ```java
@@ -44,3 +46,28 @@ public int minDepth(TreeNode root) {
     return 1 + ((Math.min(left, right) > 0) ? Math.min(left, right) : Math.max(left, right));
 }
 ```
+
+**Solution 2**  BFS
+
+```java
+public int MinDepth(TreeNode root) {
+        if(root == null) return 0;
+        int depth = 1;
+        Queue<TreeNode> queue = new LinkedList<TreeNode>();
+        queue.offer(root);
+        while(!queue.isEmpty())
+        {
+            int size = queue.size();
+            while(size-- > 0)
+            {
+                TreeNode temp = queue.poll();
+                if(temp.left == null && temp.right == null)  return depth;
+                if(temp.left != null) queue.offer(temp.left);
+                if(temp.right != null) queue.offer(temp.right);
+            }
+            depth++;
+        }
+        return depth;
+    }
+```
+
