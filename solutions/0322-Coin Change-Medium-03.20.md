@@ -20,7 +20,7 @@ But we don't know which is the denomination of the last coin *C*. We compute *F(
 
 <img src="..\images\0322\2.png" alt="2" style="zoom:80%;" />
 
-![3](..\images\0322\3.png)
+<img src="..\images\0322\3.png" alt="3" style="zoom:80%;" />
 
 In the recursion tree above, we could see that a lot of subproblems were calculated multiple times. For example the problem *F*(1) was calculated 13 times. Therefore we should cache the solutions to the subproblems in a table and access them in constant time when necessary
 
