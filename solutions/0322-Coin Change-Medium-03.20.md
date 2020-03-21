@@ -14,13 +14,13 @@ First, let's define:
 
 We note that this problem has an optimal substructure property, which is the key piece in solving any Dynamic Programming problems. In other words, the optimal solution can be constructed from optimal solutions of its subproblems. How to split the problem into subproblems? Let's assume that we know *F(S)* where some change *val<sub>1</sub>, val<sub>2</sub>, ...* for *S* which is optimal and the last coin's denomination is *C*. Then the following equation should be true because of optimal substructure of the problem:
 
-<img src="E:\LeetCode-Daily\images\0322\1.png" alt="1" style="zoom:80%;" />
+<img src="..\images\0322\1.png" alt="1" style="zoom:80%;" />
 
 But we don't know which is the denomination of the last coin *C*. We compute *F( S - c<sub>i</sub> )* for each possible denomination *c<sub>0</sub> ... c<sub>n-1</sub>* and choose the minimum among them. The following recurrence relation holds:
 
-<img src="E:\LeetCode-Daily\images\0322\2.png" alt="2" style="zoom:80%;" />
+<img src="..\images\0322\2.png" alt="2" style="zoom:80%;" />
 
-![3](E:\LeetCode-Daily\images\0322\3.png)
+![3](..\images\0322\3.png)
 
 In the recursion tree above, we could see that a lot of subproblems were calculated multiple times. For example the problem *F*(1) was calculated 13 times. Therefore we should cache the solutions to the subproblems in a table and access them in constant time when necessary
 
@@ -58,7 +58,7 @@ For the iterative solution, we think in bottom-up manner. Before calculating *F*
 
 min<sub>j=0, ..., n-1</sub> *F*( i - c<sub>j</sub> ) + 1
 
-<img src="E:\LeetCode-Daily\images\0322\4.png" alt="4" style="zoom:80%;" />
+<img src="..\images\0322\4.png" alt="4" style="zoom:80%;" />
 
 ##### Code:
 
