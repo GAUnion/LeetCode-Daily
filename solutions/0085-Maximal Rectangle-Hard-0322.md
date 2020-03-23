@@ -1,6 +1,6 @@
-## 85. Maximal Rectangle
+# 85. Maximal Rectangle
 
-### Problem: 
+## Problem: 
 
 Given a 2D binary matrix filled with 0's and 1's, find the largest rectangle containing only 1's and return its area.
 
@@ -17,9 +17,9 @@ Input:
 Output: 6
 ````
 
-### Solutions
+## Solutions
 
-#### 1. Based on Largest Rectangle in Histogram
+### 1. Based on Largest Rectangle in Histogram
 
 Maintain a temp array of the same size as the number of columns. Copy the first row to this temp array and find the largest rectangular area for the histogram. Then keep adding elements of next row to this temp array if they are not zero. If they are zero then put zero there. Every time calculate the max area in the histogram.
 
@@ -52,7 +52,7 @@ class Solution:
  * Time complexity: O(M*N)
  * Space complexity: O(M)
 
-#### 2. Maximum Height of Each Point
+### 2. Maximum Height of Each Point
 
 This DP solution proceeds row by row. Let the maximal rectangle area at row i and column j be computed by [right(i, j) - left(i, j)] * height(i, j).
 
@@ -100,7 +100,7 @@ class Solution:
  * Time complexity: O(M*N)
  * Space complexity: O(M)
 
-#### Solution3 Bitwise Operations 
+### 3. Bitwise Operations 
 
 In python, a loop is slow but bitwise operations are fast. The following solution utilizes the bitwise operation and takes a brute-force-like approach to solve the problem. Code is from this [discussion](https://leetcode-cn.com/problems/maximal-rectangle/solution/jing-miao-jie-fa-wei-yun-suan-by-zhu-meng-10/).
 
