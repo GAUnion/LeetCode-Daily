@@ -22,7 +22,7 @@ One possible answer is: `[0,-3,9,-10,null,5]`, which represents the following he
 
 **Note**:star: Following solutions are based on [leetcode solutions](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/solution/), due to the high quality of leetcode solutions themselves. Therefore, we use the original answers to this problem and provide my own C++ implementation for each solution (if you are looking for Python or Java solution, you can directly go to [this site](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/solution/)). We also provide other interesting solutions from discussion area. 
 
-###Direct Recursion
+### Direct Recursion
 
 **Intuition**
 
