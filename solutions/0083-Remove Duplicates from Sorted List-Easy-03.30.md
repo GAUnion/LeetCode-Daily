@@ -1,4 +1,4 @@
-#Remove Duplicates from Sorted List
+# Remove Duplicates from Sorted List
 
 ### Problem
 Given a sorted linked list, delete all duplicates such that each element appear only once.
