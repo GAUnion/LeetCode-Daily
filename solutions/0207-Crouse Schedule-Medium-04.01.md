@@ -38,13 +38,13 @@ class Solution:
 ### Method: DFS
 
 1. Use flag to judge the state of every node: if the flag == 0, the node hasn't been visited. if the flag == -1, it has been visited by other nodes. if the flag == 1, it is visited by current node.
-2. Execute DFS to every node and judge whether there is a ring.
-    End:
-        When flag[i] == -1, the node has been visited by the DFS of other nodes, which don't need DFS again. Return True.
-        When flag[i] == 1, the node has been visited twice in this DFS, which means there is a ring. Return False
-    Assign the flag of current visited node i: flag[i] as 1, which means it has been visited in this DFS
-    Recursively visit all the adjacent nodes of node i, return False when ring is detected.
-    When the adjacent nodes of the node i have all been visited and no rings has been detected. Then assign the flag[i] as -1 and return True.
+2. Execute DFS to every node and judge whether there is a ring.  
+    End:  
+        When flag[i] == -1, the node has been visited by the DFS of other nodes, which don't need DFS again. Return True.  
+        When flag[i] == 1, the node has been visited twice in this DFS, which means there is a ring. Return False  
+    Assign the flag of current visited node i: flag[i] as 1, which means it has been visited in this DFS  
+    Recursively visit all the adjacent nodes of node i, return False when ring is detected.  
+    When the adjacent nodes of the node i have all been visited and no rings has been detected. Then assign the flag[i] as -1 and return True.  
 3. If there is no ring in the graph, return True.
 
 ```python
