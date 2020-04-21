@@ -53,7 +53,7 @@ Space Complexity: O(N)
 
 ### 2. Backtracking + swap
 
-Solution 1 is slow because in each `dfs` it needs to iterate through all the numbers. This solution is more efficient, we uses the swap function instead of the visited array. Also from the back to the front,  The main ideas are as follows:
+Solution 1 is slow because in each `dfs` it needs to iterate through all the numbers. This solution is more efficient, we uses the swap function instead of the visited array. Also iterate from the back to the front.  The main ideas are as follows:
 
 1. Initialize v, the placed element is [1 ... N] (excluding 0)
 2. Assuming that the elements from p + 1 to N-1 have been placed, consider the position of p
