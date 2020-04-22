@@ -10,7 +10,9 @@ Given a collection of integers that might contain duplicates, **nums**, return a
 
 Using **HashSet**:
 
-It's natural to think about using hash-like methods to solve 'no-duplicate' problem. This method uses the pre-implemented data structure HashSet to solve the problem intuitively. 
+It's natural to think about using hash-like methods to solve 'no-duplicate' problem. 
+
+This method uses HashSet to solve the problem intuitively. 
 
 ```java
 class Solution {
