@@ -1,4 +1,4 @@
-# Course Schedule Ⅱ
+# Majority Element
 
 ### Method: Boyer-Moore Voting Algorithm 
 
